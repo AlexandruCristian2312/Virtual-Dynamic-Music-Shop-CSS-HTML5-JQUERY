@@ -1,0 +1,41 @@
+<?php
+	session_start();
+	$_SESSION['name'] = '';
+	$_SESSION['correct'] = 0;
+	$_SESSION['wrong'] = 0;
+	$_SESSION['count'] = 0;
+
+	// go to test.php
+	if(isset($_POST['name'])) {
+		$_SESSION['name'] = $_POST['name'];
+		header('Location: test.php');
+	}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <ul>
+	        <li><a class="active" href="main.html">Acasa</a></li>
+	        <li><a href="Relief.html">Relief</a></li>
+	        <li><a href="Demografie.html">Demografie</a></li>
+	        <li><a href="Economie.html">Economie</a></li>
+          <li><a href="Quiz.html">Quiz musical general culture</a></li>
+		  <li><a href="active" href="Learn more about guitars.html">Learn more about guitars</a></li>
+	</ul>
+	
+	<div class="container">
+		<form action="" method="POST">
+			<input type="text" name="name" placeholder="name"> <br><br>
+			<input type="submit" value="Start">
+		</form>
+	</div>		
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<ul>
+	<li><a class="active" href="main.php">Home</a></li>
+	        <li><a class="active" href="main.html">Home</a></li>
+	        <li><a href="5 big beginners mistakes.html">5 big beginners mistakes</a></li>
+	        <li><a href="Intermediate lessons.html">Intermediate lessons</a></li>
+	        <li><a href="Guitar Covers.html">Guitar Covers </a></li>
+            <li><a href="Quiz.html">Music for fun</a></li>
+		    <li><a href="Songs Requests.html">Songs requests</a></li>
+		    <li><a href="Contact.html">Contact</a></li>
+		  
+		  
+	</ul>
+	<title>Contact page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/png" href="res/guitarist_logo.png">
+    <style>
+
+ul {
+  list-style-type: none;
+	top : 100px;
+	left : 0px;
+  margin: -8px;
+  padding: -5px;
+  overflow: hidden;
+  background-color: #333;
+	z-index : 5;
+	position: sticky;
+}
+
+li {
+  float: left;
+	z-index : 5;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+	font-family: PremierLeague;
+  padding: 14px 16px;
+  text-decoration: none;
+	z-index : 5;
+}
+
+li a:hover {
+  background-color: #111;
+}
+  </style>
+  </head>
+
+  <body>
+    
+	<h2></h2>
+	<p>   <?php echo $Song; ?></p>
+	<p>   <?php echo $email; ?></p>
+	<p>   <?php echo $lessonPrice; ?></p>
+	<p    <?php echo $SongFeeling; ?></p>
+	  
+	
+	<h2>Contact page</h2>
+	<p> To get in contact please email           <?php echo $Song; ?></p>
+	<p> alexandrucristian.popa2312@yahoo.com     <?php echo $email; ?></p>
+	<p>"Only when you have friends" Roumanian song audio in the corner <?php echo $lessonPrice; ?></p>
+	<p>Email me please,for any questions you have !:) <?php echo $SongFeeling; ?></p>
+      <p class = "poza_romania">
+	  
+	  <video controls>
+	  <source src="Liceenii 15 august 2018 Guitar Cover.mp4" type="video/mp4">
+	  </p>
+	  
+  </p> 
+  <div class = "poza_europa">
+  </div>
+     
+</body>
+</html>
